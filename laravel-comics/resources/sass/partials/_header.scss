@@ -1,0 +1,40 @@
+@import "./_variables.scss";
+
+  header {
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      width: 95%;
+      margin: auto;
+    }
+    .logo {
+      img {
+        width: 80%;
+      }
+    }
+    .menu {
+      display: flex;
+      li {
+        margin-left: 20px;
+        list-style: none;
+        a {
+          display: inline-block;
+          font-size: 16px;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: bold;
+          // metti stessi px della linea per non fare alzare il testo
+          line-height: 96px;
+          color: $dark;
+          &.active,
+          &:hover {
+            color: $primaryColor;
+            border-bottom: 4px solid $primaryColor;
+            line-height: 96px;
+          }
+        }
+      }
+    }
+  }

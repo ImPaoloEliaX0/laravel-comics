@@ -1,0 +1,96 @@
+@import "./variables.scss";
+
+footer {
+    // footer container
+    .footer-container {
+        padding: 30px 0px;
+        background-image: url('../../../public/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        height: 400px;
+        padding: 0 10px;
+        
+        
+        .container {
+            position: relative;
+        }
+        // link
+        .link {
+            display: flex;
+            
+            .col {
+                width: 170px;
+                h3 {
+                    color: $light;
+                    text-transform: uppercase;
+                    margin: 20px 0px;
+                }
+                // list
+                .list {
+                    
+                    ul {
+                        list-style: none;
+                        
+                        li {
+                            margin: 5px 0px;
+                            a {
+                                font-size: 12px;
+                                text-decoration: none;
+                                color: #959595;
+                                &:hover {
+                                    color: $light;
+                                }
+                            }
+                        }
+                        
+                    }
+                    
+                }
+               
+            }
+            
+        }
+        
+        .container-logo-right {
+            position: absolute;
+            top: -25%;
+            right: 0;
+            .logo-right {
+            height: 500px;
+            }   
+        }
+    }
+    
+    // footer icon
+    .footer-icon {
+        background-color: $footerBg;
+        // row 
+        .row {
+            justify-content: space-around;
+            button {
+                border: 2px solid $primaryColor;
+                background-color: $footerBg;
+                color: $light;
+                padding: 12px;
+                margin: 20px 0px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .social {
+                display: flex;
+                align-items: center;
+                img {
+                    margin: 0px 10px;
+                }
+                a {
+                    text-decoration: none;
+                    color: $primaryColor;
+                    font-weight: bold;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+  
+}
